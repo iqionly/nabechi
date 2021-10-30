@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import App from './App';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 
-const theme = createTheme({
-
-});
+// Theme and Styles
+import './index.css';
+import { theme } from './theme';
 
 ReactDOM.render(
     <ThemeProvider theme={theme}>
