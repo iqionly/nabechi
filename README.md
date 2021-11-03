@@ -8,7 +8,7 @@ Before run, you have to install npm module first :
 
 ### `npm install`
 
-And than, you can run:
+Next, you can run:
 
 ### `npm start`
 
