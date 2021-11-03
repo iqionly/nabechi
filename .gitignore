@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 nabechi.code-workspace
+README.md
 
 # testing
 /coverage
