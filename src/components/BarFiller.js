@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import React from 'react';
 import { styled } from '@mui/material/styles';
 
 export default function BarFiller() {
@@ -12,8 +12,8 @@ export default function BarFiller() {
     }));
 
     return (
-        <Fragment>
+        <React.Fragment>
             <El />
-        </Fragment>
+        </React.Fragment>
     );
 }

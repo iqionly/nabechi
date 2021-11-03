@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react';
-import { drawerWidth } from '../theme';
+import { theme, drawerWidth } from '../theme';
 import BarFiller from './BarFiller';
 
 import Drawer from '@mui/material/Drawer';
@@ -28,7 +28,6 @@ export default function AppDrawer(props) {
     } 
 
     useEffect(() => {
-
         // Close drawer when esc clicked and drawer open
         document.body.addEventListener('keydown', handleDrawer);
         return () => {
@@ -38,6 +37,7 @@ export default function AppDrawer(props) {
 
     return (
         <Drawer
+            theme={theme}
             sx={{
                 width: drawerWidth,
                 flexShrink: 0,
@@ -54,7 +54,7 @@ export default function AppDrawer(props) {
         >
             <BarFiller />
             <Divider />
-            <List>
+            <List >
                 <ListItem button key="Home">
                     <ListItemIcon>
                         <HomeIcon />

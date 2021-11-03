@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, createContext } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 
 import Box from '@mui/material/Box';
@@ -13,7 +13,8 @@ import AppMain from './components/AppMain';
 export default function App() {
 
     // Basic Logic Drawer
-    let [open, setOpen] = useState(false);
+    let [open, setOpen] = useState(true);
+    let [mode, setMode] = useState('light');
 
     function handleDrawer(event) {
         if (open) {

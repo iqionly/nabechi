@@ -1,12 +1,18 @@
 import { createTheme } from '@mui/material/styles';
-import grey from '@mui/material/colors/grey';
 
 export const theme = createTheme({
     palette: {
-        background: {
-            default: grey[200],
-            paper: grey[200],
-        }
+        primary: {
+            light: "#e6f5e8",
+            main: "#007a27",
+            dark: "#004c00",
+        },
+        secondary: {
+            light: "#f6e5f1",
+            main: "#ac2a90",
+            dark: "#790062",
+        },
+        mode: "light",
     }
 });
 
